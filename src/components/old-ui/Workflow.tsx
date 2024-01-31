@@ -1,4 +1,4 @@
-import styles from "../styles/Workflow.module.css";
+import styles from "../../styles/Workflow.module.css";
 
 export default function Workflow() {
   return (

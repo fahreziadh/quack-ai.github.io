@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { FC } from "react";
 
-import agoLogo from "../../public/agoranov.png";
-import efLogo from "../../public/ef.png";
-import ycLogo from "../../public/yc.svg";
-import styles from "../styles/Backers.module.css";
+import agoLogo from "../../../public/agoranov.png";
+import efLogo from "../../../public/ef.png";
+import ycLogo from "../../../public/yc.svg";
+import styles from "../../styles/Backers.module.css";
 
 const Backers: FC = () => {
   return (

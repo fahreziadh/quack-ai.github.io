@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { FaDiscord, FaGithub, FaTwitter } from "react-icons/fa";
 
-import styles from "../styles/Footer.module.css";
+import styles from "../../styles/Footer.module.css";
 
 const Footer: FC = () => {
   return (

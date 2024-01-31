@@ -4,8 +4,8 @@ import { FaDiscord } from "react-icons/fa";
 import { TbBrandVscode } from "react-icons/tb";
 import Typewriter from "typewriter-effect";
 
-import waveTop from "../../public/wave-top.svg";
-import styles from "../styles/Hero.module.css";
+import waveTop from "../../../public/wave-top.svg";
+import styles from "../../styles/Hero.module.css";
 
 const wideStyle = {
   width: "100%",
