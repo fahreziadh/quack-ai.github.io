@@ -1,7 +1,10 @@
 import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
+import { Inter as FontSans } from "next/font/google";
 import Script from "next/script";
 import "../styles/globals.css";
+
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.quackai.com/"),
@@ -25,6 +28,11 @@ export const metadata: Metadata = {
   },
 };
 
+export const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -32,7 +40,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable,
+        )}
+      >
+        {children}
+      </body>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-4C1Y48B784"
         async
@@ -46,7 +61,7 @@ export default function RootLayout({
             gtag('config', 'G-4C1Y48B784');
           `}
       </Script>
-      <Analytics />
+      <Analytics debug={false} />
     </html>
   );
 }

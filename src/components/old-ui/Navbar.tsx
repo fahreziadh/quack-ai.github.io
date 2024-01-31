@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FC, useEffect, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 
-import styles from "../styles/Navbar.module.css";
+import styles from "../../styles/Navbar.module.css";
 
 const Navbar: FC = () => {
   const [isClient, setIsClient] = useState<boolean>(false);

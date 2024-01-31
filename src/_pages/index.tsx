@@ -3,11 +3,11 @@ import Script from "next/script";
 import { FC } from "react";
 
 import waveBot from "../../public/wave-bottom.svg";
-import Backers from "../components/Backers";
-import Footer from "../components/Footer";
-import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
-import Workflow from "../components/Workflow";
+import Backers from "../components/old-ui/Backers";
+import Footer from "../components/old-ui/Footer";
+import Hero from "../components/old-ui/Hero";
+import Navbar from "../components/old-ui/Navbar";
+import Workflow from "../components/old-ui/Workflow";
 import styles from "../styles/Home.module.css";
 
 const wideStyle = {
