@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <ChatwootWidget />
       <Component {...pageProps} />
-      <Analytics />
+      <Analytics debug={false} />
     </>
   );
 }

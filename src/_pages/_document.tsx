@@ -9,7 +9,7 @@ const metaBanner = "https://www.quackai.com/social-banner.png";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="en" className="legacy">
       <Head>
         <meta name="description" content={metaDescription} />
         <link rel="canonical" href={metaUrl} />
